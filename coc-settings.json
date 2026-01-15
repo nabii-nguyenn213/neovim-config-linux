@@ -1,0 +1,43 @@
+{
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.typeCheckingMode": "off",
+  "python.jediEnabled": false,
+
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.parameterTypes": false,
+
+  "python.pythonPath": "/home/nabinguyen/.local/bin/pyright-python",
+
+  "diagnostic.enable": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.signs": true,
+  "diagnostic.underline": true,
+
+  "languageserver": {
+    "swift": {
+      "command": "/home/nabinguyen/.local/share/swiftly/bin/sourcekit-lsp",
+      "filetypes": ["swift"],
+      "rootPatterns": ["Package.swift", ".git/"],
+      "args": []
+    }
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "coc.preferences.formatOnSave": false,
+  "[javascript]": { "coc.preferences.formatOnSave": true },
+  "[javascriptreact]": { "coc.preferences.formatOnSave": true },
+  "[typescript]": { "coc.preferences.formatOnSave": true },
+  "[typescriptreact]": { "coc.preferences.formatOnSave": true },
+  "[json]": { "coc.preferences.formatOnSave": true },
+
+  "tsserver.useLocalTsdk": true,
+  "tsserver.tsdk": "node_modules/typescript/lib"
+}
