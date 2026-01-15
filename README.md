@@ -11,10 +11,11 @@ as below :
     ├── settings/
 ```
 
-- Requirement : Git, Nodejs, Python [pynvim]  
+- Requirement : Git, Nodejs, Python [pynvim], ... (For more information just run `:checkhealth`)
 
 - Run `:checkhealth` to see if everything is set up correctly.
 - Run `:PlugInstall` to install Plugins in the folder `/home/user/.config/nvim/plugged`
+    - Uncomment all the plugins you don't need and run `:PlugClean` to delete those plugins. 
 
 - For **Coc Configuration** : run `:CocInstall ...` (e.g `:CocInstall pyright`)
 - For **Tree-sitter Configuration** : run `TSInstall ...` (e.g `:TSInstall python`)
