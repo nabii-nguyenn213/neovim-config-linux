@@ -82,6 +82,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'echasnovski/mini.diff'
 
+    " Code fold
+    Plug 'chrisgrieser/nvim-origami'
 
 call plug#end()
 
@@ -156,6 +158,7 @@ execute 'luafile '.nvim_settings_dir.'noice.lua'
 execute 'luafile '.nvim_settings_dir.'typr.lua'
 execute 'luafile '.nvim_settings_dir.'csvview.lua'
 execute 'luafile '.nvim_settings_dir.'minimap.lua'
+execute 'luafile '.nvim_settings_dir.'origami.lua'
 
 
 " LUA 
