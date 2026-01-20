@@ -9,6 +9,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'navarasu/onedark.nvim'
     Plug 'ellisonleao/gruvbox.nvim'
     Plug 'rebelot/kanagawa.nvim'
+    Plug 'rose-pine/neovim'
+    Plug 'talha-akram/noctis.nvim'
+    Plug 'ficd0/ashen.nvim'
 
     " Theme picker 
     Plug 'zaldih/themery.nvim'
@@ -196,6 +199,17 @@ require("onedark").setup({
   transparent = true,
 })
 
+require("rose-pine").setup({
+    variant = "auto",               -- auto, main, moon, dawn
+    styles = {
+        transparency = true,          -- enable transparent style
+    },
+})
+
+require("ashen").setup({
+  transparent = true,
+})
+
 vim.g.gruvbox_transparent_bg = 1
 
 -- Themery config 
@@ -209,6 +223,12 @@ require("themery").setup({
     { name = "Kanagawa Lotus", colorscheme = "kanagawa-lotus" }, 
     { name = "Kanagawa Wave", colorscheme = "kanagawa-wave" }, 
     { name = "Kanagawa Dragon", colorscheme = "kanagawa-dragon" }, 
+    { name = "Rose Pine", colorscheme = "rose-pine" },
+    { name = "Noctis Bordo", colorscheme = "noctis_bordo" },
+    { name = "Noctis Uva", colorscheme = "noctis_uva" },
+    { name = "Noctis Viola", colorscheme = "noctis_viola" },
+    { name = "Ashen", colorscheme = "ashen" },
+    
   }, -- Your list of installed colorschemes.
   livePreview = true,
 })
