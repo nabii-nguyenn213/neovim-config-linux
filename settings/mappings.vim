@@ -18,7 +18,8 @@ nnoremap <silent> G G
 "undo and redo
 nnoremap <silent> z u
 nnoremap <silent> <C-z> <C-r>
-"copy and paste and replace 
+
+"copy and paste  
 nnoremap <silent> u p 
 nnoremap <silent> U "+p
 vnoremap <silent> U "+p
@@ -29,6 +30,8 @@ nnoremap <silent> YY "+Y
 
 nnoremap <silent> . .
 
+" Replace 
+nnoremap <silent> <leader>R R
 
 "delete
 nnoremap <silent> d d
